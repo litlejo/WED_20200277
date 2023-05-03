@@ -1,5 +1,4 @@
-//document.getElementById("search_btn").addEventListener('click', search_message);//
-document.getElementById("search_btn").addEventListener('click', search_message);
+//document.getElementById("search_btn").addEventListener('click', search_message);
 
 var search_array = []; // 빈 배열 – 전역 변수
 
