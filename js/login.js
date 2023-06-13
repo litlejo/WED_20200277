@@ -80,3 +80,33 @@ function addJavascript(jsname) { // 자바스크립트 외부 연동
     addJavascript('/js/security.js'); // 암복호화 함수
     addJavascript('/js/session.js'); // 세션 함수
     addJavascript('/js/cookie.js'); // 쿠키 함수
+/*let loginTime;
+
+function login() {
+  // 로그인 처리 로직
+
+  loginTime = new Date();
+  loginTime.setMinutes(loginTime.getMinutes() + 5);
+
+  setTimeout(logout, 5 * 60 * 1000); // 5분 = 5 * 60 * 1000 밀리초
+}
+
+function logout() {
+  // 세션 삭제 로직
+
+  window.location.href = "main.html";
+}
+
+// 로그인 시간 유지 함수
+function maintainLoginTime() {
+  const currentTime = new Date();
+  if (currentTime >= loginTime) {
+    logout();
+  } else {
+    setTimeout(maintainLoginTime, 1000);
+  }
+}
+
+// 예시 사용법
+login();
+maintainLoginTime();*/

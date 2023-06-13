@@ -21,3 +21,20 @@ function search_message(){
    document.getElementById("search_message").innerHTML = search_str.value; // 태그에 값 추가
    console.log(search_str.value); // 콘솔에 출력
 }*/
+
+const restrictedWords = ['존나', '시발', '병신'];
+
+function handleSubmit() {
+  const searchInput = document.getElementById('searchInput').value;
+
+  if (restrictedWords.includes(searchInput)) {
+    console.log('검색을 중단합니다.');
+    return false;
+  }
+
+  console.log('검색을 실행합니다.');
+  // 폼의 추가 동작 수행 또는 서버로 검색 요청 등의 로직
+  return true;
+}
+
+// HTML 폼에서 호출하는 함수를 등록
